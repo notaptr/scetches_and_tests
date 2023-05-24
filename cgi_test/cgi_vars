@@ -1,0 +1,140 @@
+AUTH_TYPE
+
+The name of the authentication scheme used to protect the servlet. For example, 
+BASIC, SSL, or null if the servlet was not protected.
+
+CONTENT_LENGTH
+
+The length of the request body in bytes made available by the input stream or -1 
+if the length is not known. For HTTP servlets, the value returned is the same as 
+the value of the CGI variable CONTENT_LENGTH.
+
+CONTENT_TYPE
+
+The MIME type of the body of the request, or null if the type is not known. For 
+HTTP servlets, the value returned is the same as the value of the CGI variable 
+CONTENT_TYPE.
+
+GATEWAY_INTERFACE
+
+The revision of the CGI specification being used by the server to communicate 
+with the script. It is "CGI/1.1".
+
+HTTP_ACCEPT
+
+Variables with names beginning with "HTTP_" contain values from the request 
+header, if the scheme used is HTTP. HTTP_ACCEPT specifies the content types your 
+browser supports. For example, text/xml.
+
+HTTP_ACCEPT_CHARSET
+
+Character preference information. Used to indicate the client's prefered 
+character set if any. For example, utf-8;q=0.5.
+
+HTTP_ACCEPT_ENCODING
+
+Defines the type of encoding that may be carried out on content returned to the 
+client. For example, compress;q=0.5.
+
+HTTP_ACCEPT_LANGUAGE
+
+Used to define which languages you would prefer to receive content in. For 
+example, en;q=0.5. If nothing is returned, no language preference is indicated.
+
+HTTP_FORWARDED
+
+If the request was forwarded, shows the address and port through of the proxy 
+server.
+
+HTTP_HOST
+
+Specifies the Internet host and port number of the resource being requested. 
+Required for all HTTP/1.1 requests.
+
+HTTP_PROXY_AUTHORIZATION
+
+Used by a client to identify itself (or its user) to a proxy which requires 
+authentication.
+
+HTTP_USER_AGENT
+
+The type and version of the browser the client is using to send the request. For 
+example, Mozilla/1.5.
+
+PATH_INFO
+
+Optionally contains extra path information from the HTTP request that invoked 
+the script, specifying a path to be interpreted by the CGI script. PATH_INFO 
+identifies the resource or sub-resource to be returned by the CGI script, and it 
+is derived from the portion of the URI path following the script name but 
+preceding any query data.
+
+PATH_TRANSLATED
+
+Maps the script's virtual path to the physical path used to call the script. 
+This is done by taking any PATH_INFO component of the request URI and performing 
+any virtual-to-physical translation appropriate.
+
+QUERY_STRING
+
+The query string that is contained in the request URL after the path.
+
+REMOTE_ADDR
+
+Returns the IP address of the client that sent the request. For HTTP servlets, 
+the value returned is the same as the value of the CGI variable REMOTE_ADDR.
+
+REMOTE_HOST
+
+The fully-qualified name of the client that sent the request, or the IP address 
+of the client if the name cannot be determined. For HTTP servlets, the value 
+returned is the same as the value of the CGI variable REMOTE_HOST.
+
+REMOTE_USER
+
+Returns the login of the user making this request if the user has been 
+authenticated, or null if the user has not been authenticated.
+
+REQUEST_METHOD
+
+Returns the name of the HTTP method with which this request was made. For 
+example, GET, POST, or PUT.
+
+SCRIPT_NAME
+
+Returns the part of the URL from the protocol name up to the query string in the 
+first line of the HTTP request.
+
+SERVER_NAME
+
+Returns the host name of the server that received the request. For HTTP 
+servlets, it is the same as the value of the CGI variable SERVER_NAME.
+
+SERVER_PORT
+
+Returns the port number on which this request was received. For HTTP servlets, 
+the value returned is the same as the value of the CGI variable SERVER_PORT.
+
+SERVER_PROTOCOL
+
+Returns the name and version of the protocol the request uses in the following 
+form: protocol/majorVersion.minorVersion. For example, HTTP/1.1. For HTTP 
+servlets, the value returned is the same as the value of the CGI variable 
+SERVER_PROTOCOL.
+
+SERVER_SOFTWARE
+
+Returns the name and version of the servlet container on which the servlet is 
+running.
+
+HTTP_COOKIE
+
+HTTP Cookie String.
+
+WEBTOP_USER
+
+The user name of the user who is logged in.
+
+NCHOME
+
+The NCHOME environment variable.
